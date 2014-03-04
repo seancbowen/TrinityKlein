@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# (c) 2014 Sean Bowen Trinity Lutheran Church & School, Spring TX
+
+# Script using authbuddy to configure granular permissions for non-admin users.
+
+sudo security authorizationdb write system.preferences allow
+sudo security authorizationdb write system.preferences.energysaver allow
+sudo security authorizationdb write system.preferences.timemachine allow
+sudo security authorizationdb write system.device.dvd.setregion.change allow
+sudo security authorizationdb write system.device.dvd.setregion.initial allow
+
+exit 0
