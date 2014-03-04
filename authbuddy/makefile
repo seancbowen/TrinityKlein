@@ -10,4 +10,4 @@ REVERSE_DOMAIN=com.trinityklein
 PAYLOAD=\
 	pack-usr-local-bin-authbuddy \
 	pack-script-postflight
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.2
