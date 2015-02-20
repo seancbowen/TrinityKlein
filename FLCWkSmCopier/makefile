@@ -23,7 +23,7 @@ REVERSE_DOMAIN=com.trinityklein
 PAYLOAD=\
 	pack-sharp-ppd \
 	pack-script-postflight
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.1
 
 pack-sharp-ppd: l_etc_cups_ppd
 	@sudo ${CP} ./FLCWkSmCopier.ppd ${WORK_D}/private/etc/cups/ppd/FLCWkSmCopier.ppd
