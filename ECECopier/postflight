@@ -12,9 +12,9 @@ gui_display_name="ECECopier"
 address="socket://192.168.7.40/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/SHARP MX-4110N.PPD.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
-option_1=""
-option_2=""
-option_3=""
+option_1="Option5=2TrayDrawer"
+option_2="Option1=SSFinisher"
+option_3="Option9=Installed"
 
 ### Printer Install ###
 # In case we are making changes to a printer we need to remove an existing queue if it exists.

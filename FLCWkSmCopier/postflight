@@ -12,8 +12,8 @@ gui_display_name="FLCWkSmCopier"
 address="socket://192.168.7.14/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/SHARP MX-2610N.PPD.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
-option_1=""
-option_2=""
+option_1="Option5=3TrayDrawer"
+option_2="Option1=SSFinisher"
 option_3=""
 
 ### Printer Install ###
