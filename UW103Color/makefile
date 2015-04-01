@@ -23,7 +23,7 @@ REVERSE_DOMAIN=com.trinityklein
 PAYLOAD=\
 	pack-hp-ppd \
 	pack-script-postflight
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.2
 
 pack-hp-ppd: l_etc_cups_ppd
 	@sudo ${CP} ./UW103Color.ppd ${WORK_D}/private/etc/cups/ppd/UW103Color.ppd

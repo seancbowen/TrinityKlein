@@ -9,7 +9,7 @@
 printername="UW103Color"
 location="Upper Wing Room 103"
 gui_display_name="UW103Color"
-address="socket://192.168.7.23/"
+address="socket://172.17.1.68/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/HP Color Laserjet CP2020d Series.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
