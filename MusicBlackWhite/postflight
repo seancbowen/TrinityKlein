@@ -9,7 +9,7 @@
 printername="MusicBlackWhite"
 location="FLC - Music Office"
 gui_display_name="MusicBlackWhite"
-address="socket://192.168.7.53/"
+address="socket://172.18.1.64/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
