@@ -18,7 +18,7 @@
 
 include /usr/local/share/luggage/luggage.make
 
-TITLE=WinCowCartA
+TITLE=WinCowCartB
 REVERSE_DOMAIN=com.trinityklein
 PAYLOAD=\
 	pack-brother-ppd \
@@ -26,9 +26,9 @@ PAYLOAD=\
 PACKAGE_VERSION=1.2
 
 pack-brother-ppd: l_etc_cups_ppd
-	@sudo ${CP} ./WinCowCartA.ppd ${WORK_D}/private/etc/cups/ppd/WinCowCartA.ppd
-	@sudo chmod 644 ${WORK_D}/private/etc/cups/ppd/WinCowCartA.ppd
-	@sudo chown root:_lp ${WORK_D}/private/etc/cups/ppd/WinCowCartA.ppd
+	@sudo ${CP} ./WinCowCartB.ppd ${WORK_D}/private/etc/cups/ppd/WinCowCartB.ppd
+	@sudo chmod 644 ${WORK_D}/private/etc/cups/ppd/WinCowCartB.ppd
+	@sudo chown root:_lp ${WORK_D}/private/etc/cups/ppd/WinCowCartB.ppd
 
 l_etc_cups_ppd: l_private_etc
 	@sudo mkdir -p ${WORK_D}/private/etc/cups/ppd

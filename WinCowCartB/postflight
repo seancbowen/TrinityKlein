@@ -6,10 +6,10 @@
 # Make sure to install the required drivers first!
 
 # Variables. Edit these.
-printername="WinCowCartA"
-location="Win Cow Cart A Upper Wing"
-gui_display_name="WinCowCartA"
-address="socket://172.17.1.66/"
+printername="WinCowCartB"
+location="Win Cow Cart B Upper Wing"
+gui_display_name="WinCowCartB"
+address="socket://172.17.1.72/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
