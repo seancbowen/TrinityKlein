@@ -9,7 +9,7 @@
 printername="FLC206Color"
 location="FLC - Room 206"
 gui_display_name="FLC206Color"
-address="socket://192.168.7.56/"
+address="socket://172.18.1.66/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/Brother HL-3170CDW series CUPS.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
