@@ -23,7 +23,7 @@ REVERSE_DOMAIN=com.trinityklein
 PAYLOAD=\
 	pack-brother-ppd \
 	pack-script-postflight
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.2
 
 pack-brother-ppd: l_etc_cups_ppd
 	@sudo ${CP} ./MacCOWCartB.ppd ${WORK_D}/private/etc/cups/ppd/MacCOWCartB.ppd

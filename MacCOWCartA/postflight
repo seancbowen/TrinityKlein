@@ -9,7 +9,7 @@
 printername="MacCOWCartA"
 location="Mac COW Cart A in Upper Wing"
 gui_display_name="MacCOWCartA"
-address="socket://192.168.7.50/"
+address="socket://172.17.1.73/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
