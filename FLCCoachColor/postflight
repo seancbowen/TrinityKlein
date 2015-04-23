@@ -9,7 +9,7 @@
 printername="FLCCoachColor"
 location="FLC Gym - Coach's Office"
 gui_display_name="FLCCoachColor"
-address="socket://192.168.7.57/"
+address="socket://172.18.1.68/"
 driver_ppd="/Library/Printers/PPDs/Contents/Resources/Brother HL-3170CDW series CUPS.gz"
 # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
 option_1=""
