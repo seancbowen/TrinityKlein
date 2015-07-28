@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>admin</string>
+		<key>creation_date</key>
+		<date>2015-01-07T20:44:55Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.7.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>installcheck_script</key>
+	<string>#!/bin/sh
+
+# (c) 2015 Sean Bowen Trinity Lutheran Church, Spring TX
+
+# Script to check the current munki software repo URL
+
+if [[ $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL | grep -i tk-macpkg.local | tr A-Z a-z) = 'http://tk-macpkg.local/munki_repo' ]]; then
+	echo "Need to change URL!"
+	exit 0	
+fi
+
+echo "URL is OK."
+exit 1</string>
+	<key>installer_type</key>
+	<string>nopkg</string>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>ChangeMunkiURL</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+
+# (c) 2015 Sean Bowen Trinity Lutheran Church, Spring TX
+
+# Script to change the SoftwareRepoURL in the ManagedInstall.plist
+
+sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL http://tk-macpkg.trinityklein.net/munki_repo
+
+exit 0</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>version</key>
+	<string>0.1.4</string>
+</dict>
+</plist>
+
